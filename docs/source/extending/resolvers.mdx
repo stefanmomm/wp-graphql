@@ -71,7 +71,7 @@ add_filter( 'graphql_RootQuery_fields', function( $fields ) {
 
 
     // First, make sure there's actually a "hello" field registered
-    if ( isset( $fields['hello'] ) {
+    if ( isset( $fields['hello'] ) ) {
 
       // Override the resolve function completely
       $fields['hello']['resolve'] => function() {
